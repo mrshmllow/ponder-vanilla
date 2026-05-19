@@ -10,13 +10,8 @@ neoForge = "21.1.230"
 fabricApi = "0.116.12+1.21.1"
 fabricLoader = "0.19.2"
 kuma = "21.0.8+1.21"
-ponder = "1.0.69"
+ponder = "1.0.82+mc1.21.1"
 flywheel = "1.0.6"
-
-#[create]
-#implementation("net.createmod.ponder:Ponder-NeoForge-${libs.versions.minecraft.get()}:${libs.versions.ponder.get()}")
-#ponder = { module = "net.createmod.ponder:Ponder-Neof", version.ref = "ponder" }
-#runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${libs.versions.minecraft.get()}:${libs.versions.flywheel.get()}")
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -32,6 +27,13 @@ kumaCommon = { module = "net.blay09.mods:kuma-api-common", version.ref = "kuma" 
 kumaNeoForge = { module = "net.blay09.mods:kuma-api-neoforge", version.ref = "kuma" }
 kumaForge = { module = "net.blay09.mods:kuma-api-forge", version.ref = "kuma" }
 kumaFabric = { module = "net.blay09.mods:kuma-api-fabric", version.ref = "kuma" }
+
+ponderCommon = { module = "net.createmod.ponder:ponder-common", version.ref = "ponder" }
+ponderFabric = { module = "net.createmod.ponder:ponder-fabric", version.ref = "ponder" }
+ponderNeoForge = { module = "net.createmod.ponder:ponder-neoforge", version.ref = "ponder" }
+
+flywheelFabric = { module = "dev.engine-room.flywheel:flywheel-fabric-1.21.1", version.ref = "flywheel" }
+flywheelNeoForge = { module = "dev.engine-room.flywheel:flywheel-neoforge-1.21.1", version.ref = "flywheel" }
 
 neoForm = { module = "net.neoforged:neoform", version.ref = "neoForm" }
 neoForge = { module = "net.neoforged:neoforge", version.ref = "neoForge" }

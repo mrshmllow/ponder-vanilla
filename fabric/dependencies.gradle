@@ -4,7 +4,9 @@ dependencies {
     }
     modImplementation(libs.kumaFabric)
 
-    // todo: move this to gradle/libs.versions.toml
-    modImplementation(include("net.createmod.ponder:Ponder-Fabric-${libs.versions.minecraft.get()}:${libs.versions.ponder.get()}"))
-    runtimeOnly("dev.engine-room.flywheel:flywheel-fabric-${libs.versions.minecraft.get()}:${libs.versions.flywheel.get()}")
+    // these are include so this mod can be used without create
+    modImplementation(libs.ponderFabric)
+    include(libs.ponderFabric)
+
+    runtimeOnly(libs.flywheelFabric)
 }

@@ -4,5 +4,5 @@ dependencies {
     }
     implementation(libs.kumaCommon)
 
-    implementation("net.createmod.ponder:Ponder-Common-${libs.versions.minecraft.get()}:${libs.versions.ponder.get()}")
+    implementation(libs.ponderCommon)
 }

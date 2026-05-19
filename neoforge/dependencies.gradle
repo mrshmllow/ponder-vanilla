@@ -4,8 +4,10 @@ dependencies {
     }
     implementation(libs.kumaNeoForge)
 
-    // todo: move this to gradle/libs.versions.toml
     // these are jarjar so this mod can be used without create
-    implementation(jarJar("net.createmod.ponder:Ponder-NeoForge-${libs.versions.minecraft.get()}:${libs.versions.ponder.get()}"))
-    runtimeOnly(jarJar("dev.engine-room.flywheel:flywheel-neoforge-${libs.versions.minecraft.get()}:${libs.versions.flywheel.get()}"))
+    implementation(libs.ponderNeoForge)
+    jarJar(libs.ponderNeoForge)
+
+    runtimeOnly(libs.flywheelNeoForge)
+    jarJar(libs.flywheelNeoForge)
 }

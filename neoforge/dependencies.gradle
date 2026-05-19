@@ -4,7 +4,8 @@ dependencies {
     }
     implementation(libs.kumaNeoForge)
 
-    // You can add other dependencies here as well.
-    // Note that CurseMaven and Modrinth Maven, while convenient, does not include transitive dependencies.
-    // If you are getting errors about missing classes in dependencies, try using their respective Maven repositories directly instead.
+    // todo: move this to gradle/libs.versions.toml
+    // these are jarjar so this mod can be used without create
+    implementation(jarJar("net.createmod.ponder:Ponder-NeoForge-${libs.versions.minecraft.get()}:${libs.versions.ponder.get()}"))
+    runtimeOnly(jarJar("dev.engine-room.flywheel:flywheel-neoforge-${libs.versions.minecraft.get()}:${libs.versions.flywheel.get()}"))
 }

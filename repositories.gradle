@@ -22,7 +22,10 @@ repositories {
             includeGroup "mezz.jei"
         }
     }
-	
+
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
+    maven { url = "https://maven.createmod.net" }
+
     exclusiveContent {
         forRepository {
             maven {

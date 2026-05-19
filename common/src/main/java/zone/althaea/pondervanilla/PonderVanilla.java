@@ -5,8 +5,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.blay09.mods.balm.core.BalmRegistrars;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import zone.althaea.pondervanilla.block.ModBlocks;
-import zone.althaea.pondervanilla.item.ModItems;
 
 public class PonderVanilla {
 
@@ -24,10 +22,6 @@ public class PonderVanilla {
 
     public static void initialize(BalmRegistrars registrars) {
         Balm.getConfig().registerConfig(PonderVanillaConfig.class);
-
-        registrars.blocks(ModBlocks::initialize);
-        registrars.items(ModItems::initialize);
-        registrars.creativeModeTabs(ModItems::initialize);
     }
 
 }

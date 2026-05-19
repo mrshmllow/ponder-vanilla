@@ -4,11 +4,8 @@
   "package": "zone.althaea.pondervanilla.mixin",
   "refmap": "pondervanilla.refmap.json",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
-  "client": [
-    "MinecraftMixin"
-  ],
+  "mixins": [ ],
+  "client": [ ],
   "injectors": {
     "defaultRequire": 1
   }

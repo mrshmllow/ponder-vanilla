@@ -6,12 +6,17 @@ minecraft = "1.21.1"
 neoForm = "1.21.1-20240808.144430"
 # See https://projects.neoforged.net/neoforged/neoforge
 neoForge = "21.1.230"
-# See https://files.minecraftforge.net
-forge = "52.1.0"
 # See https://fabricmc.net/develop/
 fabricApi = "0.116.12+1.21.1"
 fabricLoader = "0.19.2"
 kuma = "21.0.8+1.21"
+ponder = "1.0.69"
+flywheel = "1.0.6"
+
+#[create]
+#implementation("net.createmod.ponder:Ponder-NeoForge-${libs.versions.minecraft.get()}:${libs.versions.ponder.get()}")
+#ponder = { module = "net.createmod.ponder:Ponder-Neof", version.ref = "ponder" }
+#runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${libs.versions.minecraft.get()}:${libs.versions.flywheel.get()}")
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -30,7 +35,6 @@ kumaFabric = { module = "net.blay09.mods:kuma-api-fabric", version.ref = "kuma" 
 
 neoForm = { module = "net.neoforged:neoform", version.ref = "neoForm" }
 neoForge = { module = "net.neoforged:neoforge", version.ref = "neoForge" }
-forge = { module = "net.minecraftforge:forge", version.ref = "forge" }
 fabricApi = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabricApi" }
 fabricLoader = { module = "net.fabricmc:fabric-loader", version.ref = "fabricLoader" }
 
